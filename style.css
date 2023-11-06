@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.hero-image{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: url(photo\(forest\).jpg);
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hero-image::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: rgba(0, 0,0,.5); */
+    background: red;
+}
+.hero-content{
+    position: relative;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0 auto;
+}
+.hero-content-inner h1{
+    font-size: 40px;
+    color: red;
+    margin-bottom: 20px;
+}
+.hero-content-inner p{
+    width: 75%;
+    margin: 0 auto;
+    font-size: 15px;
+    color: yellow;
+    margin-bottom: 10px;
+    line-height: 20px;
+    font-weight: normal;
+}
+
+.hero-content-inner button{
+    width: 170px;
+    height: 50px;
+    margin-top: 20px;
+    border-radius: 50px;
+    outline: none;
+    font-size: 15px;
+    background-color: #fc5f00;
+    color: #fff;
+    border: 2px solid transparent;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .3);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.hero-content-inner button:hover{
+    border-color: #fff;
+    color: #fff;
+    background: transparent;
+}
+@media(max-width:768px){
+    .hero-content{
+        width: 100%;
+    }
+    .hero-content-inner h1{
+        font-size: 30px;
+    }
+    .hero-content-inner p{
+        width: 100%;
+        font-size: 13px;
+    }
+}
